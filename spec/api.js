@@ -10,4 +10,5 @@ export default function () {
 
     http.get('https://k6.io');
     sleep(1);
+    
 }

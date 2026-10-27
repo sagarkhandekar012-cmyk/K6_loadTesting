@@ -1,0 +1,19 @@
+{
+  "name": "k6load_testing",
+  "version": "1.0.0",
+  "description": "this is k6 script examples",
+  "homepage": "https://github.com/sagarkhandekar012-cmyk/K6_loadTesting#readme",
+  "bugs": {
+    "url": "https://github.com/sagarkhandekar012-cmyk/K6_loadTesting/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarkhandekar012-cmyk/K6_loadTesting.git"
+  },
+  "author": "sagar khandekar",
+  "type": "commonjs",
+  "main": "first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
