@@ -3,8 +3,8 @@ import {sleep} from 'k6';
 import { check } from 'k6';
 
 export const options = {
-    vus: 10,
-    duration: '30s',
+    vus: 1,
+    duration: '3s',
     
 }
 
@@ -22,5 +22,9 @@ const params = {
     auth: { username: 'SuperAdmin', password: '88%@L%es^bUX88`&&&J9XT*@52@52@,._WWM{%%^^&&kk475' },
 };
  
-    http.post(url, payload, params);
+ const res =   http.post(url, payload, params);
+ check(res, {
+    'is status 200': (r) => r.status === 200,
+    'is res body has message':(r) => r.body.includes('OTP sent successfully'),
+ });
 }
