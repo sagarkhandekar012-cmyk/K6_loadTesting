@@ -5,7 +5,7 @@ export const options = {
     executor: 'per-vu-iterations',
     vus: 1000,
     iterations: 2000,
-    duration: '30s',
+    maxDuration: '30s',
     
 }
 
