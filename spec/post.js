@@ -26,5 +26,6 @@ const params = {
  check(res, {
     'is status 200': (r) => r.status === 200,
     'is res body has message':(r) => r.body.includes('OTP sent successfully'),
+    
  });
 }
